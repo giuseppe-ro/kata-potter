@@ -1,8 +1,9 @@
-﻿using KataPotter.Infrastructure;
+﻿using KataPotter.Domain;
+using KataPotter.Infrastructure;
 
-namespace KataPotter.Domain;
+namespace KataPotter.Services;
 
-public class Price(IClient client) : IPrice
+public class PricingService(IClient client) : IPrice
 {
     private const decimal BasePrice = 8;
     

@@ -1,4 +1,6 @@
-namespace KataPotter.Domain;
+using KataPotter.Domain;
+
+namespace KataPotter.Services;
 
 public interface IPrice
 {
