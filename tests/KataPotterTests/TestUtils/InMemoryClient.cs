@@ -1,4 +1,6 @@
-namespace KataPotter.Infrastructure;
+using KataPotter.Infrastructure;
+
+namespace KataPotterTests.TestUtils;
 
 public class InMemoryClient : IClient
 {

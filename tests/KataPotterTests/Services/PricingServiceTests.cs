@@ -1,12 +1,12 @@
 using KataPotter.Domain;
-using KataPotter.Infrastructure;
 using KataPotter.Services;
+using KataPotterTests.TestUtils;
 
-namespace KataPotterTests.Domain;
+namespace KataPotterTests.Services;
 
-public class PriceTests
+public class PricingServiceTests
 {
-    private readonly IPrice _sut = new PricingService(new InMemoryClient());
+    private readonly PricingService _sut = new(new InMemoryClient());
 
     [Theory]
     [InlineData(new Book[]{}, 0)]
