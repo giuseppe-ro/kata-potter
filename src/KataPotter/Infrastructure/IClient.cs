@@ -2,5 +2,5 @@ namespace KataPotter.Infrastructure;
 
 public interface IClient
 {
-    float Get(int book);
+    decimal Get(int book);
 }

@@ -2,12 +2,12 @@ namespace KataPotter.Infrastructure;
 
 public class InMemoryClient : IClient
 {
-    public float Get(int book) => book switch
+    public decimal Get(int book) => book switch
     {
-        2 => 0.95f,
-        3 => 0.9f,
-        4 => 0.8f,
-        5 => 0.75f,
-        _ => 1f
+        2 => 0.95m,
+        3 => 0.9m,
+        4 => 0.8m,
+        5 => 0.75m,
+        _ => 1m
     };
 }
